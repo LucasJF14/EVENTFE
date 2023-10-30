@@ -1,0 +1,23 @@
+<body>
+<div class="popup">
+  <button class="close-btn" (click)="redirectToMain()">X</button>
+  <div class="message" *ngIf="error_message">
+    {{ error_message }}
+  </div>
+
+  <div class="container">
+    <form [formGroup]="form" (submit)="login()">
+      <h2>Please login.</h2>
+      <label>Username:
+        <input formControlName="username" type="text">
+      </label>
+
+      <label>Password:
+        <input formControlName="password" type="password">
+      </label>
+
+      <button type="submit" [disabled]="form.invalid">Log In</button>
+    </form>
+  </div>
+</div>
+</body>

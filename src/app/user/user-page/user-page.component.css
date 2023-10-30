@@ -1,0 +1,8 @@
+/* styles.css or your custom CSS file */
+h3 {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Text color */
+  text-align: center; /* Center the text horizontally */
+  margin: 20px 0; /* Margin above and below the title */
+}

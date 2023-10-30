@@ -1,0 +1,19 @@
+<form [formGroup]="form" (submit)="savePerson()">
+  <div class="label-input-container">
+    <label>Meno:</label>
+    <input type="text" formControlName="firstName" [class.invalid-input]="form.controls.firstName.invalid && (form.controls.firstName.touched || form.controls.firstName.dirty)" />
+    <p *ngIf="form.controls.firstName.invalid && (form.controls.firstName.touched || form.controls.firstName.dirty)" class="invalid-text">Zadajte meno</p>
+  </div>
+
+  <div class="label-input-container">
+    <label>Priezvisko:</label>
+    <input type="text" formControlName="lastName" [class.invalid-input]="form.controls.lastName.invalid && (form.controls.lastName.touched || form.controls.lastName.dirty)" />
+    <p *ngIf="(form.controls.lastName.touched || form.controls.lastName.dirty) && form.controls.lastName.errors?.required" class="invalid-text">Zadajte priezvisko</p>
+    <p *ngIf="(form.controls.lastName.touched || form.controls.lastName.dirty) && form.controls.lastName.errors?.minlength" class="invalid-text">Minimálna dĺžka priezviska sú 3 znaky</p>
+  </div>
+
+  <div class="button-container">
+    <button type="reset">Zrušiť</button>
+    <button type="submit" [disabled]="form.invalid">Uložiť</button>
+  </div>
+</form>

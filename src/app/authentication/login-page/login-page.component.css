@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.popup {
+  background: #AB5353;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.popup h2 {
+  text-align: center;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup input[type="text"],
+.popup input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #893D3D;
+  color: white;
+
+}
+
+.popup button[type="submit"] {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #4B0E0E;
+  color: white;
+  cursor: pointer;
+  font-size: 100%;
+  align-self: center;
+}
+
+.popup button[type="submit"]:hover {
+  background: #6F1A1A;
+}
+
+.popup button[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #999;
+  opacity: 0.5;
+}
+
+.popup button[type="submit"]:disabled:before {
+  content: "This is text near the cursor";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.succes_message {
+  color: #4d8523;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8d7da;
+}
+
+.error_message {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8d7da;
+}

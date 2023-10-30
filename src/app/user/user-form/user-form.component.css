@@ -1,0 +1,72 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px; /* Increased width for better spacing */
+  margin: 0 auto;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px; /* Increased margin for better spacing */
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px; /* Larger font size */
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+  border: 2px solid #ccc; /* Thicker border for better visibility */
+  border-radius: 6px; /* Larger border radius */
+  transition: border-color 0.3s;
+}
+
+input.invalid-input {
+  border-color: #f00;
+}
+
+.invalid-text {
+  color: #f00;
+  font-size: 16px; /* Larger font size */
+  margin-top: 6px; /* Adjusted margin-top */
+  margin-bottom: 12px; /* Increased margin-bottom for better spacing */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 12px 20px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Larger border radius */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+button[type="reset"]:hover {
+  background-color: #aaa;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

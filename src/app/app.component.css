@@ -1,0 +1,36 @@
+/* styles.css or your custom CSS file */
+* {
+  font-family: Arial, serif;
+}
+
+.menu {
+  display: flex;
+  background-color: #fff; /* White background color */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.menu button {
+  background-color: transparent;
+  color: #007bff; /* Google blue text color */
+  border: none;
+  border-bottom: 2px solid transparent; /* Initially, no border */
+  border-radius: 0;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  font-weight: bold; /* Make the text bolder */
+}
+
+.menu button:hover {
+  border-color: #007bff; /* Blue border color on hover */
+}
+
+.router-link-active {
+  background-color: #007bff; /* Active button background color */
+  color: #fff; /* White text color */
+  border-color: #007bff; /* Active border color */
+}
